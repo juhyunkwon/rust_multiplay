@@ -1,0 +1,17 @@
+[package]
+name = "x0-db"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "x0_member MySQL 인증"
+
+[dependencies]
+x0-core.workspace = true
+mysql_async.workspace = true
+sha2.workspace = true
+hex.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+async-trait = "0.1"
+urlencoding = "2"
+bcrypt = { version = "0.19.3", features = ["getrandom"] }

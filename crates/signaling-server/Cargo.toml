@@ -1,0 +1,18 @@
+[package]
+name = "signaling-server"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "시그널링 서버 (NAT 통과, 피어 발견)"
+
+[dependencies]
+x0-core.workspace = true
+tokio.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+dashmap.workspace = true
+uuid.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+tracing-appender.workspace = true
+anyhow.workspace = true

@@ -1,0 +1,14 @@
+{
+    "name": "X0.MultiPlay",
+    "rootNamespace": "X0.MultiPlay",
+    "references": [
+        "Unity.Newtonsoft.Json",
+        "UnityEngine.UI"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": ["WebGL"],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "autoReferenced": true,
+    "noEngineReferences": false
+}

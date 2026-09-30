@@ -1,0 +1,47 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/x0-core",
+    "crates/x0-db",
+    "crates/signaling-server",
+    "crates/dedicated-server",
+    "crates/server-host",
+    "crates/log-viewer",
+    "crates/sequence-tester",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+authors = ["x0"]
+
+[workspace.dependencies]
+x0-core = { path = "crates/x0-core" }
+x0-db = { path = "crates/x0-db" }
+signaling-server = { path = "crates/signaling-server" }
+dedicated-server = { path = "crates/dedicated-server" }
+sequence-tester = { path = "crates/sequence-tester" }
+log-viewer = { path = "crates/log-viewer" }
+
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+serde_repr = "0.1"
+thiserror = "2"
+anyhow = "1"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "fmt", "json"] }
+tracing-appender = "0.2"
+sha2 = "0.10"
+base64 = "0.22"
+aes = "0.8"
+cbc = { version = "0.1", features = ["alloc", "std"] }
+cipher = { version = "0.4", features = ["alloc", "block-padding"] }
+hex = "0.4"
+uuid = { version = "1", features = ["v4"] }
+dashmap = "6"
+mysql_async = "0.35"
+chrono = { version = "0.4", features = ["serde"] }
+rand = "0.8"
+futures = "0.3"

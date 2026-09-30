@@ -1,23 +1,57 @@
-### AL ###
-#Template for AL projects for Dynamics 365 Business Central
-#launch.json folder
+# Rust
+/target/
+**/*.rs.bk
+
+# IDE
+.idea/
 .vscode/
-#Cache folder
-.alcache/
-#Symbols folder
-.alpackages/
-#Snapshots folder
-.snapshots/
-#Testing Output folder
-.output/
-#Extension App-file
-*.app
-#Rapid Application Development File
-rad.json
-#Translation Base-file
-*.g.xlf
-#License-files
-*.bclicense
-*.flf
-#Test results file
-TestResults.xml
+*.iml
+
+# Build output / logs / dumps
+logs/
+_log/
+_bin/
+_garbage/
+dumps/
+*.dmp
+
+# Local secrets — config/appsettings.example.json 을 복사해서 사용
+config/appsettings.json
+.env
+.env.*
+
+# C# / .NET
+csharp/**/bin/
+csharp/**/obj/
+*.user
+
+# Unity (에디터가 재생성)
+unity/X0MultiPlay/[Ll]ibrary/
+unity/X0MultiPlay/[Tt]emp/
+unity/X0MultiPlay/[Oo]bj/
+unity/X0MultiPlay/[Ll]ogs/
+unity/X0MultiPlay/[Bb]uild/
+unity/X0MultiPlay/[Bb]uilds/
+unity/X0MultiPlay/x0_build/
+unity/X0MultiPlay/UserSettings/
+unity/X0MultiPlay/MemoryCaptures/
+unity/X0MultiPlay/Assets/_Recovery/
+unity/X0MultiPlay/Assets/_Recovery.meta
+unity/X0MultiPlay/.vs/
+unity/X0MultiPlay/*.csproj
+unity/X0MultiPlay/*.sln
+unity/X0MultiPlay/*.slnx
+unity/X0MultiPlay/*.pidb
+unity/X0MultiPlay/*.booproj
+unity/X0MultiPlay/*.svd
+unity/X0MultiPlay/*.pdb
+unity/X0MultiPlay/*.mdb
+unity/X0MultiPlay/*.opendb
+unity/X0MultiPlay/*.VC.db
+unity/X0MultiPlay/sysinfo.txt
+unity/X0MultiPlay/crashlytics-build.properties
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store

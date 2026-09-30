@@ -1,0 +1,11 @@
+{
+  "name": "com.x0.multiplay",
+  "version": "0.1.0",
+  "displayName": "x0 MultiPlay",
+  "description": "Unity 클라이언트 — Rust 서버(시그널링/Authority)와 JSON 한 줄 프로토콜로 통신합니다. Assets/Scenes/MultiplayClient.unity 에서 Play 합니다.",
+  "unity": "6000.0",
+  "unityRelease": "5.1f1",
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.2.1"
+  }
+}

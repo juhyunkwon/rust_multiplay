@@ -1,0 +1,18 @@
+[package]
+name = "log-viewer"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "서버 JSON 로그 GUI 뷰어"
+
+[[bin]]
+name = "log-viewer"
+path = "src/main.rs"
+
+[dependencies]
+x0-core.workspace = true
+eframe = "0.31"
+egui = "0.31"
+rfd = "0.15"
+serde.workspace = true
+serde_json.workspace = true

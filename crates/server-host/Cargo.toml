@@ -1,0 +1,16 @@
+[package]
+name = "server-host"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "SignalingServer + DedicatedServer 동시 구동"
+
+[dependencies]
+x0-core.workspace = true
+signaling-server.workspace = true
+dedicated-server.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+tracing-appender.workspace = true
+anyhow.workspace = true
